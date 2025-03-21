@@ -9,7 +9,11 @@
   "routes": [
     {
       "src": "/api/v1/(.*)",
-      "dest": "index.js"
+      "dest": "index.js",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Authorization, Content-Type"
+      }
     }
   ]
 }
